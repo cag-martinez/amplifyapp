@@ -10,6 +10,11 @@
       "StackName": "amplify-cacheflow-dev-185054",
       "StackId": "arn:aws:cloudformation:us-east-1:238844694077:stack/amplify-cacheflow-dev-185054/3f955ee0-f938-11ea-8365-12dc156c2e93",
       "AmplifyAppId": "dx1tsjorv3xlf"
+    },
+    "categories": {
+      "auth": {
+        "cacheflow7b3ae06d": {}
+      }
     }
   }
 }
