@@ -2,6 +2,10 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+import { listNotes } from './graphql/queries';
+import { createNote as createNoteMutation, deleteNote as deleteMutation } from './graphql/mutations'
+
+const initialFormState = { name: '' , description: '' }
 
 function App() {
   return (
