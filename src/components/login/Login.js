@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Switch, Route } from 'react-router-dom';
-import logo from "./logo.svg";
-import "./App.css";
+//import logo from "./logo.svg";
+// import "./App.css";
 import { API, Storage } from "aws-amplify";
 import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 import { listNotes } from "./graphql/queries";
@@ -10,9 +9,6 @@ import {
   deleteNote as deleteNoteMutation,
 } from "./graphql/mutations";
 //import { API, Storage } from "aws-amplify";
-import Home from "./pages/home/Home"
-import Dashboard from "./pages/dashboard/Dashboard";
-
 
 const initialFormState = { name: "", description: "" };
 
@@ -102,12 +98,6 @@ function App() {
         ))}
       </div>
 
-      
-      <Switch>
-      <Route exact path='/' component={Home} />
-      <Route exact path='/Dashboard' component={Dashboard} />
-      
-      </Switch>
       <AmplifySignOut />
     </div>
   );
